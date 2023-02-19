@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+img {
+  border-radius: 50%;
+  scale: 70%;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+}
+
+h3,
+p {
+  margin: 0%;
+}
+
+.container {
+  padding: 4%;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.card {
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: 2%;
+}
+.creds {
+  display: flex;
+}
+
+.creds-text {
+  float: right;
+  padding: 3% 0%;
+}
+
+.creds p {
+  opacity: 50%;
+}
+
+.card-body p {
+  opacity: 70%;
+}
+
+.light-text {
+  color: white;
+}
+
+.dark-text {
+  color: hsl(217, 19%, 35%);
+}
+
+.top .card:nth-child(1) {
+  background-color: hsl(263, 55%, 52%);
+}
+
+.top .card:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.bottom .card:nth-child(1),
+.right {
+  background-color: white;
+}
+
+.bottom .card:nth-child(2) {
+  background-color: hsl(219, 29%, 14%);
+}
+
+@media (max-width: 375px) {
+  .container,
+  .top,
+  .bottom {
+    grid-template-columns: 1fr;
+  }
+}
